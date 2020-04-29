@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+// Validate height
+bool ValidateHeight(int height) {
+	if (height > 0)
+		return true;
+	return false;
+}
+
 // main func
 int main()
 {
