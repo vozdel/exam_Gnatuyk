@@ -1,8 +1,14 @@
 #include <iostream>
 using namespace std;
 
+// main func
 int main()
 {
-	
+		int height, option;
+	cout << "Enter height: ";
+	cin >> height;
+	cout << "Enter option: ";
+	cin >> option;
+	ChoosePyramid(height, option);
 	return 0;
 }
