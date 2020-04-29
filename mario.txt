@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+// Validate option
+bool ValidateOption(int option) {
+	if (option == 0 || option == 1)
+		return true;
+	return false;
+}
+
 // Validate height
 bool ValidateHeight(int height) {
 	if (height > 0)
