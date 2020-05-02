@@ -6,6 +6,34 @@ bool CheckMoney(int money) {
 		return false;
 	return true;
 }
+//coin amount calculation
+int ConvertMoney(float money) {
+	return money *= 100;
+}
+
+int Count25(int& money) {
+	int counter = money / 25;
+	money = money % 25;
+	return counter;
+}
+
+int Count10(int& money) {
+	int counter = money / 10;
+	money = money % 10;
+	return counter;
+}
+
+int Count5(int& money) {
+	int counter = money / 5;
+	money = money % 5;
+	return counter;
+}
+
+int Count1(int& money) {
+	int counter = money / 1;
+	money = 0;
+	return counter;
+}
 //counting result
 void ShowCoins(float money) {
 	int coins = ConvertMoney(money);
