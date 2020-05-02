@@ -1,8 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-	
+//main funktion
+int main() {
+	float money;
+
+	do {
+		cout << "Enter money: ";
+		cin >> money;
+	} while (!CheckMoney(money));
+	ShowCoins(money);
 	return 0;
 }
