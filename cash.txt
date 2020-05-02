@@ -1,5 +1,11 @@
 #include <iostream>
 using namespace std;
+//fool test
+bool CheckMoney(int money) {
+	if (money < 0)
+		return false;
+	return true;
+}
 
 //main funktion
 int main() {
